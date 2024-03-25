@@ -9,6 +9,7 @@ This project is reference to quicky reproduce the Semaphore release issue with r
 - Checkout and build this codebase
   - Build using **skipping the test cases**.
 
+
 ### Steps
 - Configure the redis details in the application.yml in the resources folder.
   - replace _hostname_ and cluster _port_.
@@ -44,6 +45,9 @@ curl --location 'http://localhost:8083/redis/operation' \
     "permitId": "<above fetched permitId>"
 }'
 ```
+#### Quick reference to setup
+<img src="./artifacts/issue-reference.drawio.svg">
+
 #### Expected Behaviour
 The expected behaviour is application-instance-1 thread should be unblocked and response should be returned immediately the lock is released from application-instance-2
 

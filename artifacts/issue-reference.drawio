@@ -1,0 +1,39 @@
+<mxfile host="Electron" modified="2024-03-25T18:28:02.562Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.0.2 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="R6o5UVJ-urPJl-p4yBz4" version="23.0.2" type="device">
+  <diagram name="Page-1" id="q1wSaZd4-6uAzXL0flTw">
+    <mxGraphModel dx="794" dy="781" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-1" value="AWS Redis Cluster&lt;br&gt;&lt;b&gt;(more than 1 shard)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="21" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-2" value="App (Instance 2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="280" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jbhwVVAZzaSks8-TjjE6-3" target="jbhwVVAZzaSks8-TjjE6-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-5" value="&lt;b&gt;Step 1&lt;/b&gt;&lt;br&gt;acquire semaphore lock&lt;br&gt;returned permit id - &lt;b&gt;&amp;lt;permit-id-1&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="jbhwVVAZzaSks8-TjjE6-4">
+          <mxGeometry x="-0.2403" y="1" relative="1" as="geometry">
+            <mxPoint y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-3" value="App (Instance 1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="230" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jbhwVVAZzaSks8-TjjE6-2" target="jbhwVVAZzaSks8-TjjE6-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jbhwVVAZzaSks8-TjjE6-7" value="&lt;b&gt;Step 2&lt;/b&gt;&lt;br&gt;release lock using&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&amp;lt;permit-id-1&amp;gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" vertex="1" connectable="0" parent="jbhwVVAZzaSks8-TjjE6-6">
+          <mxGeometry x="-0.0629" y="1" relative="1" as="geometry">
+            <mxPoint x="24" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
