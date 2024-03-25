@@ -14,6 +14,7 @@ This project is reference to quicky reproduce the Semaphore release issue with r
   - replace _hostname_ and cluster _port_.
 - Run two instances of application
   - e.g. application-instance-1 at port **8082** and application-instance-2 at port **8083**
+  - _For Intellj run configuration files has already been committed_
 - Use following curl to take a lock from once application instance e.g. from **application-instance-1** running on port 8082
   - e.g I am taking lock for 40 secs
   ```shell

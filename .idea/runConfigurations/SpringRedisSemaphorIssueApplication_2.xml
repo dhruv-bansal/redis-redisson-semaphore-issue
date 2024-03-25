@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SpringRedisSemaphorIssueApplication-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+    <module name="spring-redis-semaphor-issue" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.techpleiad.exploration.springredissemaphorissue.SpringRedisSemaphorIssueApplication" />
+    <option name="VM_PARAMETERS" value="-Dserver.port=8083" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
