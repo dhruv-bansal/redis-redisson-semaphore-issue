@@ -1,7 +1,7 @@
 ## PREFACE
 This project is reference to quicky reproduce the Semaphore release issue with redis multi shard cluster.
 
-## Steps of reproduction
+## Steps of reproducing issue
 ### Prerequisites
 - Cluster of redis with more than one shard.
   - In our use case we are leveraging AWS Elasticache with Redis 7.1.0
